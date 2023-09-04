@@ -9,11 +9,11 @@ import {
 } from "@capacitor-community/sqlite";
 import { JeepSqlite } from "jeep-sqlite/dist/components/jeep-sqlite";
 
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 window.addEventListener("DOMContentLoaded", async () => {
   try {
     const platform = Capacitor.getPlatform();
-
 
     // WEB SPECIFIC FUNCTIONALITY
     if (platform === "web") {
@@ -40,4 +40,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   } catch (e) {
     console.log(e);
   }
+
+  defineCustomElements(window);
+
 });
