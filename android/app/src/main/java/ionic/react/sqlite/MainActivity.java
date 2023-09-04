@@ -1,4 +1,4 @@
-package ionic.react.sqlite;
+package com.imaginativedata.rumo002;
 
 import com.getcapacitor.BridgeActivity;
 

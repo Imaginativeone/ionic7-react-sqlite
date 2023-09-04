@@ -12,6 +12,8 @@ PODS:
     - Capacitor
   - CapacitorKeyboard (5.0.5):
     - Capacitor
+  - CapacitorSplashScreen (5.0.6):
+    - Capacitor
   - CapacitorStatusBar (5.0.5):
     - Capacitor
   - SQLCipher (4.5.4):
@@ -28,6 +30,7 @@ DEPENDENCIES:
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
+  - "CapacitorSplashScreen (from `../../node_modules/@capacitor/splash-screen`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
 
 SPEC REPOS:
@@ -48,6 +51,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorKeyboard:
     :path: "../../node_modules/@capacitor/keyboard"
+  CapacitorSplashScreen:
+    :path: "../../node_modules/@capacitor/splash-screen"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
 
@@ -58,10 +63,11 @@ SPEC CHECKSUMS:
   CapacitorCordova: 5984fa700842461518ecd320905c7f19ecdd590b
   CapacitorHaptics: 4b1a7e1bac1794d1515842d304f9fce46ef5084c
   CapacitorKeyboard: ba4d618d80bf8caef4b9d8a971d714b9ca795e28
+  CapacitorSplashScreen: 5fa2ab5e46cf5cc530cf16a51c80c7a986579ccd
   CapacitorStatusBar: 540867ac3c63875b65bebd888f695de50a13a9a2
   SQLCipher: 905b145f65f349f26da9e60a19901ad24adcd381
   ZIPFoundation: d170fa8e270b2a32bef9dcdcabff5b8f1a5deced
 
-PODFILE CHECKSUM: f44bc5ec959d7b958c2cbc033c29bc3d0b482fa0
+PODFILE CHECKSUM: facf272fd08c6fe4387eb20b7386eb622733af2a
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1
