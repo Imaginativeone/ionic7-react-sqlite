@@ -8,7 +8,13 @@ import {
   IonInput,
   IonButton,
   IonLabel,
+  IonIcon,
+  IonFab,
+  IonFabButton,
 } from "@ionic/react";
+
+import { camera } from 'ionicons/icons';
+
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { SQLiteDBConnection } from "@capacitor-community/sqlite";
@@ -134,14 +140,25 @@ const Home: React.FC = () => {
     }
   };
 
+  const cameraClicked = () => {
+    console.log("Camera button was clicked");
+  };
+
+  // Location is off with the camera button
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>REACT SQLITE</IonTitle>
+          <IonTitle>My Gallery</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen className="ion-padding">
+        <IonFab vertical='top' horizontal='end' slot='fixed'>
+          <IonFabButton onClick={cameraClicked}>
+            <IonIcon icon={camera}></IonIcon>
+          </IonFabButton>
+        </IonFab>
         {editItem ? (
           <IonItem>
             <IonInput
